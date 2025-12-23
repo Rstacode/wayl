@@ -24,6 +24,11 @@ class Wayl
         $this->apiKey = $apiKey ?? config('wayl.api_key', '');
         $this->baseUrl = $baseUrl ?? config('wayl.base_url', 'https://api.thewayl.com/api/v1');
 
+        // Ensure base URL ends with a trailing slash for proper Guzzle path resolution
+        if (!str_ends_with($this->baseUrl, '/')) {
+            $this->baseUrl .= '/';
+        }
+
         $this->client = new Client([
             'base_uri' => $this->baseUrl,
             'timeout' => config('wayl.timeout', 30),
@@ -150,4 +155,3 @@ class Wayl
         return new RefundService($this);
     }
 }
-

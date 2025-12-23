@@ -20,7 +20,7 @@ class RefundService
      */
     public function create(array $data): array
     {
-        return $this->client->post('/refunds', $data);
+        return $this->client->post('refunds', $data);
     }
 
     /**
@@ -30,7 +30,7 @@ class RefundService
      */
     public function all(array $params = []): array
     {
-        return $this->client->get('/refunds', $params);
+        return $this->client->get('refunds', $params);
     }
 
     /**
@@ -38,7 +38,7 @@ class RefundService
      */
     public function find(string $refundId): array
     {
-        return $this->client->get("/refunds/{$refundId}");
+        return $this->client->get("refunds/{$refundId}");
     }
 
     /**
@@ -46,7 +46,7 @@ class RefundService
      */
     public function cancel(string $refundId): array
     {
-        return $this->client->delete("/refunds/{$refundId}/cancel");
+        return $this->client->delete("refunds/{$refundId}/cancel");
     }
 }
 

@@ -20,7 +20,7 @@ class ProductService
      */
     public function all(array $params = []): array
     {
-        return $this->client->get('/products', $params);
+        return $this->client->get('products', $params);
     }
 
     /**
@@ -28,7 +28,7 @@ class ProductService
      */
     public function find(string $productId): array
     {
-        return $this->client->get("/products/{$productId}");
+        return $this->client->get("products/{$productId}");
     }
 }
 

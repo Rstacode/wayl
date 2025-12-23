@@ -20,7 +20,7 @@ class SubscriberService
      */
     public function all(array $params = []): array
     {
-        return $this->client->get('/subscribers', $params);
+        return $this->client->get('subscribers', $params);
     }
 }
 

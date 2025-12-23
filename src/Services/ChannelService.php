@@ -20,7 +20,6 @@ class ChannelService
      */
     public function all(): array
     {
-        return $this->client->get('/channels');
+        return $this->client->get('channels');
     }
 }
-

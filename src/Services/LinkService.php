@@ -29,7 +29,7 @@ class LinkService
      */
     public function create(array $data): array
     {
-        return $this->client->post('/links', $data);
+        return $this->client->post('links', $data);
     }
 
     /**
@@ -39,7 +39,7 @@ class LinkService
      */
     public function all(array $params = []): array
     {
-        return $this->client->get('/links', $params);
+        return $this->client->get('links', $params);
     }
 
     /**
@@ -47,7 +47,7 @@ class LinkService
      */
     public function find(string $referenceId): array
     {
-        return $this->client->get("/links/{$referenceId}");
+        return $this->client->get("links/{$referenceId}");
     }
 
     /**
@@ -55,7 +55,7 @@ class LinkService
      */
     public function invalidate(string $referenceId): array
     {
-        return $this->client->post("/links/{$referenceId}/invalidate");
+        return $this->client->post("links/{$referenceId}/invalidate");
     }
 
     /**
@@ -63,7 +63,7 @@ class LinkService
      */
     public function invalidateIfPending(string $referenceId): array
     {
-        return $this->client->post("/links/{$referenceId}/invalidate-if-pending");
+        return $this->client->post("links/{$referenceId}/invalidate-if-pending");
     }
 
     /**
@@ -73,9 +73,8 @@ class LinkService
      */
     public function batch(array $referenceIds): array
     {
-        return $this->client->post('/links/batch', [
+        return $this->client->post('links/batch', [
             'referenceIds' => $referenceIds,
         ]);
     }
 }
-

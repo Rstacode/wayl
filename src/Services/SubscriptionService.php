@@ -20,7 +20,7 @@ class SubscriptionService
      */
     public function all(array $params = []): array
     {
-        return $this->client->get('/subscriptions', $params);
+        return $this->client->get('subscriptions', $params);
     }
 
     /**
@@ -28,7 +28,7 @@ class SubscriptionService
      */
     public function find(string $subscriptionId): array
     {
-        return $this->client->get("/subscriptions/{$subscriptionId}");
+        return $this->client->get("subscriptions/{$subscriptionId}");
     }
 }
 

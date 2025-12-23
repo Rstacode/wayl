@@ -20,7 +20,6 @@ class AuthService
      */
     public function verifyKey(): array
     {
-        return $this->client->get('/verify-auth-key');
+        return $this->client->get('verify-auth-key');
     }
 }
-

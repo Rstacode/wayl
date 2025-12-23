@@ -32,4 +32,3 @@ class WaylException extends Exception
         return new self($message, $statusCode, $response);
     }
 }
-
