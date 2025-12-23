@@ -597,7 +597,6 @@ try {
 
 - **Website**: [wayl.io](https://wayl.io)
 - **API Documentation**: [api.thewayl.com](https://api.thewayl.com)
-- **Email**: support@wayl.io
 - **Issues**: [GitHub Issues](https://github.com/rstacode/wayl/issues)
 
 ## Contributing
