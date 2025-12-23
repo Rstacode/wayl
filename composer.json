@@ -1,0 +1,48 @@
+{
+    "name": "rstacode/wayl",
+    "description": "Laravel SDK for Wayl.io - E-commerce payment platform for Iraq and Middle East",
+    "keywords": [
+        "laravel",
+        "wayl",
+        "payment",
+        "iraq",
+        "e-commerce",
+        "sdk"
+    ],
+    "homepage": "https://github.com/rstacode/wayl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rstacode",
+            "email": "rstacode@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2|^8.3|^8.4",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wayl\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wayl\\WaylServiceProvider"
+            ],
+            "aliases": {
+                "Wayl": "Wayl\\Facades\\Wayl"
+            }
+        }
+    },
+    "support": {
+        "issues": "https://github.com/rstacode/wayl/issues",
+        "source": "https://github.com/rstacode/wayl"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
