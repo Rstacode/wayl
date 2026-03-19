@@ -25,7 +25,7 @@ Wayl provides a simple and powerful Laravel package to create payment links, man
 ## Requirements
 
 - PHP 8.1, 8.2, 8.3, or 8.4
-- Laravel 10, 11, or 12
+- Laravel 10, 11, 12, or 13
 
 ## Installation
 
